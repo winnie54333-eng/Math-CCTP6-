@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Time in Malaysia</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(120deg, #dcedc8, #e8f5e9, #c8e6c9);
+      color: #1b3a2f;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* 主标题 */
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      margin-bottom: 30px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #2e7d32, #66bb6a, #81c784);
+      color: white;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 2.7rem;
+    }
+
+    header h2 {
+      margin-top: 10px;
+      font-weight: 300;
+      opacity: 0.95;
+      line-height: 1.4;
+    }
+
+    /* 网格布局 */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    /* 卡片 */
+    .card {
+      backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.6);
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      border: 1px solid rgba(255,255,255,0.4);
+      transition: all 0.25s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+
+    .card h3 {
+      color: #2e7d32;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #444;
+      margin-bottom: 15px;
+    }
+
+    /* iframe */
+    .iframe-container {
+      width: 100%;
+      height: 200px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 2px solid #a5d6a7;
+    }
+
+    .iframe-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* 响应式 */
+    @media (max-width: 900px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- 主标题 -->
+    <header>
+      <h1>My Time in Malaysia</h1>
+      <h2>
+        WEN XINYI · ZHU ZIYI · WU XIN<br>
+        <span style="font-size: 0.9em;">Absolute Value Function</span>
+      </h2>
+    </header>
+
+    <!-- 3x3 网格 -->
+    <div class="grid">
+
+      <!-- 9个卡片 -->
+      <div class="card">
+        <h3>Section 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="iframe-container">
+          <iframe src="https://example.com"></iframe>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Section 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="iframe-container">
+          <iframe src="https://example.com"></iframe>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Section 3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="iframe-container">
+          <iframe src="https://example.com"></iframe>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Section 4</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="iframe-container">
+          <iframe src="https://example.com"></iframe>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Section 5</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="iframe-container">
+          <iframe src="https://example.com"></iframe>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Section 6</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="iframe-container">
+          <iframe src="https://example.com"></iframe>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Section 7</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="iframe-container">
+          <iframe src="https://example.com"></iframe>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Section 8</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="iframe-container">
+          <iframe src="https://example.com"></iframe>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Section 9</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="iframe-container">
+          <iframe src="https://example.com"></iframe>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html>
